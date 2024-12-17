@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;  
+    box-sizing: border-box;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    box-sizing: border-box;
+}
+.child1,.child2,.child3,.child4,.child5,.child6,.child7,.child8{
+    display: flex;
+    box-sizing: border-box;
+}
+.child1>div,.child2>div,.child3>div,.child4>div,.child5>div,.child6>div,.child7>div,.child8>div{
+    width: 80px;
+    height:68px;
+    background-color: #ffc18c;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.child1>div,.child2>div{
+    font-size: 50px;
+    color:black;
+    font-weight: 700;
+}
+.child1>div:nth-child(even),.child2>div:nth-child(odd),.child3>div:nth-child(even),.child4>div:nth-child(odd),.child5>div:nth-child(even),.child6>div:nth-child(odd),.child7>div:nth-child(even),.child8>div:nth-child(odd){
+  background-color:#84240c ;
+}
+.child1>div:hover,.child2>div:hover,.child3>div:hover,.child4>div:hover,.child5>div:hover,.child6>div:hover,.child7>div:hover,.child8>div:hover{
+    font-size: 80px;
+}
