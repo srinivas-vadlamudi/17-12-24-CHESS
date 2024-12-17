@@ -5,6 +5,7 @@
 }
 body{
     background-color: rgba(252, 216, 216, 0.532);
+    
 }
 .parent{
     display: flex;
@@ -15,15 +16,13 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     position: absolute;
-    box-sizing: border-box;
 }
 .child{
     display: flex;
-    box-sizing: border-box;
 }
 .child>div{
-    width: 80px;
-    height:68px;
+    width: 70px;
+    height:65px;
     background-color: #ffc18c;
     display: flex;
     justify-content: center;
